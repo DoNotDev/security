@@ -1,6 +1,6 @@
 {
   "name": "@donotdev/security",
-  "version": "0.1.42",
+  "version": "0.1.44",
   "private": false,
   "type": "module",
   "license": "MIT",
@@ -28,7 +28,7 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "@donotdev/core": "^0.1.42"
+    "@donotdev/core": "^0.1.43"
   },
   "devDependencies": {
     "@donotdev/core": "workspace:*",
