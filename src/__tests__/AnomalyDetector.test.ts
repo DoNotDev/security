@@ -1,7 +1,6 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 
 import { AnomalyDetector } from '../server/AnomalyDetector';
-
 import type { AnomalyHandler, AnomalyType } from '../server/AnomalyDetector';
 
 describe('AnomalyDetector', () => {

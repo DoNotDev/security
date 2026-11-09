@@ -4,7 +4,6 @@ import {
   DndevRateLimiter,
   MemoryRateLimitStorageBackend,
 } from '../server/RateLimiter';
-
 import type { RateLimitStorageBackend } from '../server/RateLimiter';
 
 describe('MemoryRateLimitStorageBackend', () => {

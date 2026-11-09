@@ -11,7 +11,6 @@
  */
 
 import { scrubSecrets } from './SecretValidator';
-
 import type { AuditEvent } from '../common/SecurityConfig';
 
 export interface AuditLoggerOptions {

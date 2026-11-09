@@ -1,9 +1,9 @@
 import { describe, it, expect, vi } from 'vitest';
 
-import { DndevSecurity } from '../server/DndevSecurity';
 import { AnomalyDetector } from '../server/AnomalyDetector';
 import { AuditLogger } from '../server/AuditLogger';
 import { AuthHardening } from '../server/AuthHardening';
+import { DndevSecurity } from '../server/DndevSecurity';
 import { PrivacyManager } from '../server/PrivacyManager';
 import { DndevRateLimiter } from '../server/RateLimiter';
 
