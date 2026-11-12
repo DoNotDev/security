@@ -18,6 +18,8 @@ const security = new DndevSecurity({
 });
 ```
 
+**Custom hardening:** `SecurityContext.authHardening` must implement `AuthHardeningContext` (`@donotdev/core`): `checkLockout(id)` throws while locked, `recordFailure(id)` returns `{ locked: boolean; attempts: number }` (auth providers audit `auth.locked` from it), `recordSuccess(id)` clears the counter. `AuthHardening` already satisfies it.
+
 **Anti-pattern:** Login endpoint without lockout. Lockout by IP only (shared IPs lock out legitimate users). Instant unlock on password reset (allows lockout bypass).
 
 **Review flag:** Check that `DndevSecurity` is wired to auth provider. Verify lockout config matches sensitivity (financial apps: 3 attempts, 30 min).
