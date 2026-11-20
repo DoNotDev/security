@@ -129,7 +129,7 @@ export const appConfig: AppConfig = {
 };
 ```
 
-**Result:** No cookie banner shown - all cookies are GDPR-compliant without consent.
+**Result:** No cookie banner is shown and the footer's `#cookie-settings` link is not rendered (nothing to configure): strictly necessary cookies need no consent (CNIL; loi Informatique et Libertés art. 82). The decision is `isCookieNoticeRequired(features.requiredCookies)` (`@donotdev/core`): a notice is required only when `requiredCookies` lists `functional`, `analytics` or `marketing`. Same on Next and Vite. `PrivacyPolicyTemplate` then lists the strictly necessary cookies the framework sets (preferences, sign-in session, payment) instead of the optional categories.
 
 ### With Analytics/Marketing
 
